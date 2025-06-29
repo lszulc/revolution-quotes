@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>French Revolution Quotes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="quote-box">
+        <div class="quote" id="quote-text">„{{ quote.content }}”</div>
+        <div class="author" id="quote-author">— {{ quote.author }}</div>
+        <button class="button" onclick="loadNewQuote()">Choose different quote!</button>
+    </div>
+</body>
+</html>
